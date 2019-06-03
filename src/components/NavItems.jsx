@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import styled from '@emotion/styled';
 import {Flex} from './elements';
-import { ThemeContext } from './ThemeContext';
 
 const ChangeThemeButton = styled.button`
   width: 100px;

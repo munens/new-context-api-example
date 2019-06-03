@@ -4,7 +4,6 @@ import NavItems from './NavItems';
 import NavLogo from './NavLogo';
 import {Flex} from './elements';
 import { ThemeContext } from './ThemeContext';
-import { UserContext } from './UserContext';
 
 const NavContainer = styled(Flex)`
   align-items: center;
@@ -23,9 +22,6 @@ const Navbar = () => {
         return (
           <NavContainer theme={theme}>
             <NavLogo theme={theme} />
-            <UserContext.Consumer>
-              {({name}) => <div>{name}</div>}
-            </UserContext.Consumer>
             <NavItems {...value} />
           </NavContainer>
         );

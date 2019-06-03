@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { ThemeContext } from './ThemeContext';
 
 const NavLogoContainer = styled.div`
   font-size: 24px;
